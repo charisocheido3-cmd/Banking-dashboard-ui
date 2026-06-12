@@ -1,0 +1,213 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:250px;
+    background:#111827;
+    color:white;
+    padding:25px;
+}
+
+.sidebar h2{
+    margin-bottom:30px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin:20px 0;
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+}
+
+.sidebar a:hover{
+    color:#60a5fa;
+}
+
+/* MAIN CONTENT */
+
+.main-content{
+    flex:1;
+    padding:40px;
+}
+
+.main-content h1{
+    margin-bottom:25px;
+}
+
+/* DASHBOARD CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card p{
+    margin-top:15px;
+    font-size:24px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+/* TRANSACTIONS */
+
+.transaction-card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.credit{
+    color:#16a34a;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.debit{
+    color:#dc2626;
+    font-weight:bold;
+    font-size:20px;
+}
+
+/* FORMS */
+
+.transfer-form{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    max-width:600px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.transfer-form input,
+.transfer-form textarea{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.transfer-form button{
+    padding:15px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* CARD PAGE */
+
+.bank-card{
+    width:350px;
+    height:200px;
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #1e3a8a
+    );
+
+    color:white;
+    border-radius:20px;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.card-footer{
+    display:flex;
+    justify-content:space-between;
+}
+
+.freeze-btn{
+    margin-top:20px;
+    padding:12px 20px;
+    border:none;
+    background:#ef4444;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    .bank-card{
+        width:100%;
+    }
+
+  .active{
+    background:#2563eb;
+    padding:10px;
+    border-radius:8px;
+    display:block;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin:15px 0;
+}
+
+.sidebar ul li a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:10px;
+    border-radius:8px;
+}
+
+.sidebar ul li a:hover{
+    background:#1e40af;
+}  
+
+}

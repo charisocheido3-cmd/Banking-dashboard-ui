@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>MyBank</h2>
+
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="transactions.html">Transactions</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <header>
+            <h1>My Profile</h1>
+        </header>
+
+        <!-- Profile Card -->
+        <div class="profile-card">
+
+            <h2>Customer Information</h2>
+
+            <p><strong>Name:</strong> John Doe</p>
+
+            <p><strong>Account Number:</strong> 0123456789</p>
+
+            <p><strong>Email:</strong> johndoe@gmail.com</p>
+
+            <p><strong>Phone:</strong> +234 801 234 5678</p>
+
+            <p><strong>Account Type:</strong> Savings</p>
+
+            <button id="editProfileBtn">
+                Edit Profile
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Modal -->
+<div id="profileModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close-profile">&times;</span>
+
+        <h2>Edit Profile</h2>
+
+        <form>
+
+            <input
+                type="text"
+                value="John Doe"
+                placeholder="Full Name"
+            >
+
+            <input
+                type="email"
+                value="johndoe@gmail.com"
+                placeholder="Email"
+            >
+
+            <input
+                type="text"
+                value="+234 801 234 5678"
+                placeholder="Phone Number"
+            >
+
+            <button type="button">
+                Save Changes
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
